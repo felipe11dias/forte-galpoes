@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mailTo.href = `mailto:${this.elements.email}?subject=Entrando em contato via site para oportunidadades de negócios.&cc=mamaucar@gmail.com&bcc=mamaucar@gmail.com&body=${this.elements.description}`
     mailTo.click();
     mailTo.remove();
+    console.log(`mailto:${this.elements.email}?subject=Entrando em contato via site para oportunidadades de negócios.&cc=mamaucar@gmail.com&bcc=mamaucar@gmail.com&body=${this.elements.description}`)
     this.reset();
   });
 });
